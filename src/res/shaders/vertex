@@ -1,0 +1,9 @@
+#version 330 core
+
+in vec4 position;
+
+uniform vec2 u_Offset;
+
+void main() {
+    gl_Position = position + vec4(u_Offset, 0.0, 0.0);
+}
